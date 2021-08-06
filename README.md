@@ -1,6 +1,4 @@
-# Website Frontend Big Data BPS
-
-Projek Big Data Frontend BPS menggunakan VueJS 3 dan Vue Router
+# exsum
 
 ## Project setup
 ```
