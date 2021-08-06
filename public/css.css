@@ -1,0 +1,34 @@
+.btn-home {
+    margin: 10px;
+}
+
+.dashboard-list {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+}
+
+.dashboard-card {
+    padding: 1.5rem;
+}
+
+.btn-merah,
+.btn-merah:link,
+.btn-merah:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-merah:hover,
+.btn-merah:active {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.row {
+    margin: 0;
+}
