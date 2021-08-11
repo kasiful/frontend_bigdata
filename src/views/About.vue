@@ -6,7 +6,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-lg-5" data-aos="fade-right">
             <!-- <p>Tentang Kami</p> -->
-            <h1>Tentang Kami</h1>
+            <h1 class="mt-3">Tentang Kami</h1>
             <p class="py-2 para-light">
               Selama ini BPS mengumpulkan berbagai data dari berbagai sumber
               melalui sensus, survei, dan kompilasi produk administrasi. Big
@@ -59,9 +59,9 @@
           fuga. Itaque, ea quo.
         </p> -->
         </div>
-        <div class="row gy-4 py-2" data-aos="zoom-in">
+        <div class="row gy-4 py-2 text-center" data-aos="zoom-in">
           <div class="col-lg-4">
-            <div class="card bg-transparent">
+            <div class="card bg-transparent no-border">
               <i class="fas fa-home fa-2x"></i>
               <h4 class="py-2">Sumber data baru hasil Revolusi industri 4.0</h4>
               <p class="para-light">
@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-transparent">
+            <div class="card bg-transparent no-border">
               <i class="fas fa-wifi fa-2x"></i>
               <h4 class="py-2">Tren pemanfaatan Big Data di NSO</h4>
               <p class="para-light">
@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-transparent">
+            <div class="card bg-transparent no-border">
               <i class="fas fa-phone fa-2x"></i>
               <h4 class="py-2">Peluang besar dalam pemanfaatan big data</h4>
               <p class="para-light">
@@ -121,73 +121,14 @@
           libero pariatur cumque, ipsa dolores voluptatibus voluptate alias sit
           fuga. Itaque, ea quo.
         </p> -->
-
-          <div class="block d-flex align-items-center">
+          <div
+            class="block d-flex align-items-center"
+            v-for="peluang in peluangs"
+            :key="peluang"
+          >
             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Kerangka sampel atau pembuatan register, mengidentifikasi unit
-              populasi survei dan / atau memberikan informasi tambahan seperti
-              variabel stratifikasi
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>Penggnti data lengkap, menggantikan survei</p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Pengganti data parsial untuk subkelompok populasi, mengurangi
-              ukuransampel
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Pengganti data parsial untuk beberapa item data yang diperlukan,
-              mengurangi panjang kuesioner survei, atau memperkaya dataset
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Imputasi untuk data yang hilang, mengganti unit yang sama atau
-              serupa
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Mengedit, membantu deteksi, dan penanganan anomali dalam data
-              survei
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Menghubungkan ke data lain, membuat kumpulan data yang lebih kaya
-              dan / atau perspektif longitudinal/series
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Konfrontasi data, memastikan validitas dan konsistensi data survei
-            </p>
-          </div>
-
-          <div class="block d-flex align-items-center">
-            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-            <p>
-              Menghasilkan wawasan analitis baru, meningkatkan pengukuran dan
-              penggambaran fenomena ekonomi, sosial, dan lingkungan
+            <p style="text-align: left">
+              {{ peluang }}
             </p>
           </div>
         </div>
@@ -221,7 +162,7 @@
                     adalah:
                   </p>
 
-                  <div class="block d-flex align-items-center">
+                  <div class="block d-flex align-items-center mt-2">
                     <p class="pe-2">
                       <i class="far fa-check-circle fa-1x"></i>
                     </p>
@@ -231,7 +172,7 @@
                     </p>
                   </div>
 
-                  <div class="block d-flex align-items-center">
+                  <div class="block d-flex align-items-center my-1">
                     <p class="pe-2">
                       <i class="far fa-check-circle fa-1x"></i>
                     </p>
@@ -301,28 +242,44 @@
     <section class="location text-light py-5">
       <div class="container" data-aos="zoom-in">
         <div class="row">
-          <div class="col-lg-3 d-flex align-items-center" style="cursor:pointer" onclick="window.open('https://twitter.com/bps_statistics')">
+          <div
+            class="col-lg-3 d-flex align-items-center"
+            style="cursor:pointer"
+            onclick="window.open('https://twitter.com/bps_statistics')"
+          >
             <div class="p-2"><i class="fab fa-twitter fa-3x"></i></div>
             <div class="ms-2">
               <h6>Twitter</h6>
               <p>@bps_statistics</p>
             </div>
           </div>
-          <div class="col-lg-3 d-flex align-items-center" style="cursor:pointer" onclick="window.open('https://web.facebook.com/bpsstatistics')">
+          <div
+            class="col-lg-3 d-flex align-items-center"
+            style="cursor:pointer"
+            onclick="window.open('https://web.facebook.com/bpsstatistics')"
+          >
             <div class="p-2"><i class="fab fa-facebook fa-3x"></i></div>
             <div class="ms-2">
               <h6>Facebook</h6>
               <p>@bpsstatistics</p>
             </div>
           </div>
-          <div class="col-lg-3 d-flex align-items-center" style="cursor:pointer" onclick="window.open('https://www.instagram.com/bps_statistics')">
+          <div
+            class="col-lg-3 d-flex align-items-center"
+            style="cursor:pointer"
+            onclick="window.open('https://www.instagram.com/bps_statistics')"
+          >
             <div class="p-2"><i class="fab fa-instagram fa-3x"></i></div>
             <div class="ms-2">
               <h6>Instagram</h6>
               <p>@bpsstatistics</p>
             </div>
           </div>
-          <div class="col-lg-3 d-flex align-items-center" style="cursor:pointer" onclick="window.open('https://www.youtube.com/channel/UCQZFQxmG7KQwpaMEw01t7ZA/featured')">
+          <div
+            class="col-lg-3 d-flex align-items-center"
+            style="cursor:pointer"
+            onclick="window.open('https://www.youtube.com/channel/UCQZFQxmG7KQwpaMEw01t7ZA/featured')"
+          >
             <div class="p-2"><i class="fab fa-youtube fa-3x"></i></div>
             <div class="ms-2">
               <h6>Youtube</h6>
@@ -335,120 +292,23 @@
       <!-- end of container -->
     </section>
     <!-- end of location -->
-
-    <!-- Footer -->
-    <!-- <section class="footer text-light">
-      <div class="container">
-        <div class="row" data-aos="fade-right">
-          <div class="col-lg-3 py-4 py-md-5">
-            <div class="d-flex align-items-center">
-              <h4 class="">Mirko</h4>
-            </div>
-            <p class="py-3 para-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              animi repudiandae explicabo esse maxime, impedit rem voluptatibus
-              amet error quas.
-            </p>
-            <div class="d-flex">
-              <div class="me-3">
-                <a href="#your-link">
-                  <i class="fab fa-facebook-f fa-2x py-2"></i>
-                </a>
-              </div>
-              <div class="me-3">
-                <a href="#your-link">
-                  <i class="fab fa-twitter fa-2x py-2"></i>
-                </a>
-              </div>
-              <div class="me-3">
-                <a href="#your-link">
-                  <i class="fab fa-instagram fa-2x py-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 py-4 py-md-5">
-            <div>
-              <h4 class="py-2">Quick Links</h4>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="#about"><p class="ms-3">About</p></a>
-              </div>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="#"><p class="ms-3">Services</p></a>
-              </div>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="#"><p class="ms-3">Plans</p></a>
-              </div>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="#"><p class="ms-3">Contact</p></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 py-4 py-md-5">
-            <div>
-              <h4 class="py-2">Useful Links</h4>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="privacy.html"><p class="ms-3">Privacy</p></a>
-              </div>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="terms.html"><p class="ms-3">Terms</p></a>
-              </div>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="#your-link"><p class="ms-3">Disclaimer</p></a>
-              </div>
-              <div class="d-flex align-items-center py-2">
-                <i class="fas fa-caret-right"></i>
-                <a href="#your-link"><p class="ms-3">FAQ</p></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 py-4 py-md-5">
-            <div class="d-flex align-items-center">
-              <h4>Newsletter</h4>
-            </div>
-            <p class="py-3 para-light">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Laboriosam, ab.
-            </p>
-            <div class="d-flex align-items-center">
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control p-2"
-                  placeholder="Enter Email"
-                  aria-label="Recipient's email"
-                />
-                <button class="btn-secondary text-light">
-                  <i class="fas fa-envelope fa-lg"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- end of footer -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-
-// export default {
-//   name: "Home",
-//   components: {
-//     HelloWorld,
-//   },
-// };
+export default {
+  data: () => ({
+    peluangs: [
+      "Kerangka sampel atau pembuatan register, mengidentifikasi unit populasi survei dan / atau memberikan informasi tambahan seperti variabel stratifikasi.",
+      "Pengganti data lengkap, menggantikan survei.",
+      "Pengganti data parsial untuk subkelompok populasi, mengurangi ukuran sampel.",
+      "Pengganti data parsial untuk beberapa item data yang diperlukan, mengurangi panjang kuesioner survei, atau memperkaya dataset.",
+      "Imputasi untuk data yang hilang, mengganti unit yang sama atau serupa.",
+      "Mengedit, membantu deteksi, dan penanganan anomali dalam data survei.",
+      "Menghubungkan ke data lain, membuat kumpulan data yang lebih kaya dan / atau perspektif longitudinal/series.",
+      "Konfrontasi data, memastikan validitas dan konsistensi data survei.",
+      "Menghasilkan wawasan analitis baru, meningkatkan pengukuran dan penggambaran fenomena ekonomi, sosial, dan lingkungan.",
+    ],
+  }),
+};
 </script>
